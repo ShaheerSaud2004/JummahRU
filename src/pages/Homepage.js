@@ -16,40 +16,88 @@ const Homepage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-rutgers-red via-rutgers-light-red to-rutgers-dark-red text-white py-24 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          {/* Floating Geometric Shapes */}
+          <div className="absolute top-20 left-10 w-20 h-20 border-2 border-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-16 h-16 bg-white/10 rounded-lg rotate-45 animate-bounce" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-32 left-1/4 w-12 h-12 border-2 border-white/30 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 right-1/3 w-8 h-8 bg-white/20 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          
+          {/* Islamic Pattern Overlay */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M50 0L60 40L100 50L60 60L50 100L40 60L0 50L40 40Z'/%3E%3C/g%3E%3C/svg%3E")`,
+              backgroundSize: '100px 100px',
+              animation: 'float 20s ease-in-out infinite'
+            }}></div>
+          </div>
+          
+          {/* Gradient Orbs */}
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-white/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-l from-white/10 to-transparent rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div className="mb-10">
-              <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl border-4 border-white/20">
-                <img 
-                  src={logoImage} 
-                  alt="Rutgers Jumu'ah Logo" 
-                  className="w-28 h-28 rounded-full object-cover"
-                />
+              {/* Unique Logo Container with Glow Effect */}
+              <div className="relative mx-auto mb-8 w-40 h-40">
+                <div className="absolute inset-0 bg-white rounded-full shadow-2xl border-4 border-white/20 animate-pulse"></div>
+                <div className="absolute inset-2 bg-gradient-to-br from-white to-gray-100 rounded-full shadow-inner"></div>
+                <div className="absolute inset-4 bg-white rounded-full flex items-center justify-center shadow-lg">
+                  <img 
+                    src={logoImage} 
+                    alt="Rutgers Jumu'ah Logo" 
+                    className="w-24 h-24 rounded-full object-cover shadow-md"
+                  />
+                </div>
+                {/* Rotating Ring */}
+                <div className="absolute inset-0 border-4 border-transparent border-t-white/30 border-r-white/20 rounded-full animate-spin" style={{animationDuration: '8s'}}></div>
+                <div className="absolute inset-2 border-2 border-transparent border-b-white/20 border-l-white/30 rounded-full animate-spin" style={{animationDuration: '12s', animationDirection: 'reverse'}}></div>
               </div>
-              <h1 className="text-6xl md:text-7xl font-serif font-bold mb-4 drop-shadow-lg">
-                JUMU'AH
+              
+              {/* Unique Typography with Glow */}
+              <h1 className="text-6xl md:text-8xl font-serif font-bold mb-4 drop-shadow-2xl relative">
+                <span className="bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent animate-pulse">
+                  JUMU'AH
+                </span>
+                <div className="absolute inset-0 text-6xl md:text-8xl font-serif font-bold opacity-20 blur-sm">
+                  JUMU'AH
+                </div>
               </h1>
-              <p className="text-2xl md:text-3xl font-light opacity-95 mb-2">at Rutgers</p>
-              <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
+              <p className="text-2xl md:text-4xl font-light opacity-95 mb-4 tracking-wider">
+                at <span className="font-bold text-yellow-200">Rutgers</span>
+              </p>
+              <div className="flex items-center justify-center space-x-4 mb-6">
+                <div className="w-16 h-1 bg-gradient-to-r from-transparent to-white rounded-full"></div>
+                <div className="w-3 h-3 bg-white rounded-full animate-ping"></div>
+                <div className="w-16 h-1 bg-gradient-to-l from-transparent to-white rounded-full"></div>
+              </div>
             </div>
             
             <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-8">
               Stories from your Rutgers Jumu'ah Community. Join us every Friday at 1:20 pm at the Cook Student Center MPR!
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/khateebs" className="btn-primary">
-                View Khateebs
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Link to="/khateebs" className="group relative px-8 py-4 bg-rutgers-red hover:bg-rutgers-dark-red text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <span className="relative flex items-center justify-center">
+                  <svg className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                  </svg>
+                  View Khateebs
+                </span>
               </Link>
-              <Link to="/community" className="btn-secondary">
-                Join Community
+              <Link to="/community" className="group relative px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <span className="relative flex items-center justify-center">
+                  <svg className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  Join Community
+                </span>
               </Link>
             </div>
           </div>
@@ -58,12 +106,31 @@ const Homepage = () => {
 
         {/* Weekly Khutbah Card */}
         {upcomingKhateeb && (
-          <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+            {/* Background Decorative Elements */}
+            <div className="absolute inset-0">
+              <div className="absolute top-20 left-10 w-32 h-32 bg-rutgers-red/5 rounded-full blur-2xl"></div>
+              <div className="absolute bottom-20 right-10 w-40 h-40 bg-rutgers-red/5 rounded-full blur-3xl"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-rutgers-red/3 to-transparent rounded-full blur-3xl"></div>
+            </div>
+            
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-serif font-bold text-rutgers-red mb-4">This Week's Khutbah</h2>
-                <p className="text-xl text-gray-600">Join us for Jumu'ah prayer and khutbah</p>
-                <div className="w-20 h-1 bg-rutgers-red mx-auto mt-4 rounded-full"></div>
+                <div className="inline-block relative">
+                  <h2 className="text-4xl md:text-6xl font-serif font-bold text-rutgers-red mb-4 relative">
+                    <span className="bg-gradient-to-r from-rutgers-red via-rutgers-light-red to-rutgers-red bg-clip-text text-transparent">
+                      This Week's Khutbah
+                    </span>
+                    <div className="absolute -top-2 -right-2 w-4 h-4 bg-rutgers-red rounded-full animate-ping"></div>
+                    <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-rutgers-light-red rounded-full animate-pulse"></div>
+                  </h2>
+                </div>
+                <p className="text-xl text-gray-600 mb-6">Join us for Jumu'ah prayer and khutbah</p>
+                <div className="flex items-center justify-center space-x-4">
+                  <div className="w-12 h-1 bg-gradient-to-r from-transparent to-rutgers-red rounded-full"></div>
+                  <div className="w-2 h-2 bg-rutgers-red rounded-full animate-pulse"></div>
+                  <div className="w-12 h-1 bg-gradient-to-l from-transparent to-rutgers-red rounded-full"></div>
+                </div>
               </div>
               
               <div className="max-w-5xl mx-auto">
