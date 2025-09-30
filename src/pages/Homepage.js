@@ -26,10 +26,17 @@ const Homepage = () => {
             <div className="mb-10">
               <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl border-4 border-white/20">
                 <img 
-                  src="/logo.jpg" 
+                  src={process.env.PUBLIC_URL + "/logo.jpg"} 
                   alt="Rutgers Jumu'ah Logo" 
                   className="w-28 h-28 rounded-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
                 />
+                <div className="w-28 h-28 bg-rutgers-red rounded-full flex items-center justify-center" style={{display: 'none'}}>
+                  <span className="text-white font-bold text-4xl">J</span>
+                </div>
               </div>
               <h1 className="text-6xl md:text-7xl font-serif font-bold mb-4 drop-shadow-lg">
                 JUMU'AH

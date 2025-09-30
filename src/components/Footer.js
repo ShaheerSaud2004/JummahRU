@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-white rounded-full overflow-hidden border-2 border-white shadow-lg">
                 <img 
-                  src="/logo.jpg" 
+                  src={process.env.PUBLIC_URL + "/logo.jpg"} 
                   alt="Rutgers Jumu'ah Logo" 
                   className="w-full h-full object-cover"
                 />
