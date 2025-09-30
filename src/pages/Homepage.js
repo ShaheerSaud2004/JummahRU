@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import khateebsData from '../data/khateebs.json';
 import weeklyContentData from '../data/weeklyContent.json';
 import OptimizedImage from '../components/OptimizedImage';
+import logoImage from '../assets/logo.jpg';
 
 const Homepage = () => {
   // Get the next upcoming khateeb
@@ -27,7 +28,7 @@ const Homepage = () => {
             <div className="mb-10">
               <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl border-4 border-white/20">
                 <img 
-                  src="/logo.jpg" 
+                  src={logoImage} 
                   alt="Rutgers Jumu'ah Logo" 
                   className="w-28 h-28 rounded-full object-cover"
                 />
