@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import khateebsData from '../data/khateebs.json';
 import weeklyContentData from '../data/weeklyContent.json';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Homepage = () => {
   // Get the next upcoming khateeb
@@ -77,10 +78,11 @@ const Homepage = () => {
                     {/* Khateeb Photo */}
                     <div className="flex-shrink-0 relative">
                       <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-rutgers-red shadow-xl">
-                        <img
+                        <OptimizedImage
                           src={upcomingKhateeb.image}
                           alt={upcomingKhateeb.name}
                           className="w-full h-full object-cover"
+                          size={160}
                         />
                       </div>
                       <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">

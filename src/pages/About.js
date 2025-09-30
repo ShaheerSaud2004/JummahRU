@@ -1,4 +1,5 @@
 import React from 'react';
+import OptimizedImage from '../components/OptimizedImage';
 
 const About = () => {
   const highlights = [
@@ -154,10 +155,11 @@ const About = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className="card text-center hover:shadow-rutgers-lg transition-shadow duration-200">
                 <div className="p-6">
-                  <img
+                  <OptimizedImage
                     src={member.image}
                     alt={member.name}
                     className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-4 border-rutgers-red"
+                    size={96}
                   />
                   
                   <h3 className="text-xl font-serif font-bold text-rutgers-red mb-2">

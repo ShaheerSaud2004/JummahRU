@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import khateebsData from '../data/khateebs.json';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Khateebs = () => {
   const [filter, setFilter] = useState('all'); // 'all', 'upcoming', 'past'
@@ -82,10 +83,11 @@ const Khateebs = () => {
             <div key={khateeb.id} className="card hover:shadow-rutgers-lg transition-shadow duration-200">
               {/* Khateeb Image */}
               <div className="relative">
-                <img
+                <OptimizedImage
                   src={khateeb.image}
                   alt={khateeb.name}
                   className="w-full h-64 object-cover"
+                  size={400}
                 />
                 {khateeb.isUpcoming && (
                   <div className="absolute top-4 right-4">
