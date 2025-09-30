@@ -30,14 +30,7 @@ const Homepage = () => {
                   src={process.env.PUBLIC_URL + "/logo.jpg"} 
                   alt="Rutgers Jumu'ah Logo" 
                   className="w-28 h-28 rounded-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
                 />
-                <div className="w-28 h-28 bg-rutgers-red rounded-full flex items-center justify-center" style={{display: 'none'}}>
-                  <span className="text-white font-bold text-4xl">J</span>
-                </div>
               </div>
               <h1 className="text-6xl md:text-7xl font-serif font-bold mb-4 drop-shadow-lg">
                 JUMU'AH

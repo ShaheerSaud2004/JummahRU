@@ -4,7 +4,6 @@ const OptimizedImage = ({
   src, 
   alt, 
   className = '', 
-  fallbackText = null,
   size = 400 
 }) => {
   const [imageError, setImageError] = useState(false);
@@ -21,7 +20,6 @@ const OptimizedImage = ({
 
   if (imageError) {
     // Generate fallback avatar with initials
-    const initials = alt.split(' ').map(name => name[0]).join('').toUpperCase();
     const fallbackSrc = `https://ui-avatars.com/api/?name=${encodeURIComponent(alt)}&background=8B0000&color=fff&size=${size}&bold=true`;
     
     return (
