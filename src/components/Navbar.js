@@ -23,10 +23,18 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-rutgers-red shadow-lg">
               <img 
-                src={process.env.PUBLIC_URL + "/logo.jpg"} 
+                src="/logo.jpg" 
                 alt="Rutgers Jumu'ah Logo" 
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  console.log('Logo failed to load:', e.target.src);
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
               />
+              <div className="w-full h-full bg-rutgers-red rounded-full flex items-center justify-center" style={{display: 'none'}}>
+                <span className="text-white font-bold text-lg">J</span>
+              </div>
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-serif font-bold text-rutgers-red">

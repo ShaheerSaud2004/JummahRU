@@ -27,7 +27,7 @@ const Homepage = () => {
             <div className="mb-10">
               <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl border-4 border-white/20">
                 <img 
-                  src={process.env.PUBLIC_URL + "/logo.jpg"} 
+                  src="/logo.jpg" 
                   alt="Rutgers Jumu'ah Logo" 
                   className="w-28 h-28 rounded-full object-cover"
                 />
