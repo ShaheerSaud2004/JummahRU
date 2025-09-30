@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "ayah",
+    "arabic": "إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا",
+    "translation": "Indeed, Allāh confers blessings upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allāh to confer] blessings upon him and ask [Allāh to grant him] peace.",
+    "reference": "Quran 33:56"
+  },
+  {
+    "id": 2,
+    "type": "dua",
+    "arabic": "اللَّهُمَّ صَلِّ صَلَاةً كَامِلَةً وَسَلِّمْ سَلَامًا تَامًّا عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِي تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ وَتُقْضَى بِهِ الْحَوَائِجُ وَتُنَالُ بِهِ الرَّغَائِبُ وَحُسْنُ الْخَوَاتِمِ وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيمِ وَعَلَى آلِهِ وَصَحْبِهِ فِي كُلِّ لَمْحَةٍ وَنَفَسٍ بِعَدَدِ كُلِّ مَعْلُومٍ لَكَ",
+    "transliteration": "Allahumma salli salatan kamilatan wa sallim salaman tamma 'ala sayyidina Muhammadin alladhi tanhallu bihi al-'uqad wa tanfaraju bihi al-kurab wa tuqda bihi al-hawa'ij wa tunalu bihi ar-ragha'ib wa husnu al-khawatim wa yustasqa al-ghamam bi wajhihi al-karim wa 'ala alihi wa sahbihi fi kulli lamhatin wa nafasin bi 'adadi kulli ma'lumin laka",
+    "translation": "O Allah, send a perfect prayer and complete greeting of peace upon our master Muhammad, the one by whom problems are solved, and anxieties are relieved, and needs are fulfilled, and aspirations are attained and good endings are received, and by whose noble face the clouds give rain - and upon his Family and Companions, with every glance and every breath, by the number of everything that is known to You."
+  },
+  {
+    "id": 3,
+    "type": "dua",
+    "arabic": "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ الْحَبِيبِ الْعَالِي الْقَدْرِ الْعَظِيمِ الْجَاهِ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ",
+    "transliteration": "Allahumma salli wa sallim wa barik 'ala sayyidina Muhammadin an-nabiyyi al-ummiyyi al-habibi al-'ali al-qadri al-'azimi al-jahi wa 'ala alihi wa sahbihi wa sallim",
+    "translation": "O Allah, exalt and greet and bless our master Muhammad, the Divinely-Inspired Prophet, the Beloved of Highest Value, Possessing Immense Status, and upon his family and companions, and send them peace."
+  },
+  {
+    "id": 4,
+    "type": "ayah",
+    "arabic": "وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ",
+    "translation": "And whoever fears Allah - He will make for him a way out and will provide for him from where he does not expect.",
+    "reference": "Quran 65:2-3"
+  }
+]

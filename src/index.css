@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-rutgers-red hover:bg-rutgers-dark-red text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-rutgers;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-rutgers-red font-semibold py-3 px-6 rounded-lg border-2 border-rutgers-red transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-rutgers border border-gray-100 overflow-hidden;
+  }
+  
+  .card-rutgers {
+    @apply bg-white rounded-xl shadow-rutgers-lg border-2 border-rutgers-red overflow-hidden;
+  }
+  
+  .text-arabic {
+    @apply font-arabic text-2xl leading-relaxed;
+  }
+  
+  .text-title {
+    @apply font-serif text-3xl font-bold text-rutgers-red;
+  }
+  
+  .text-subtitle {
+    @apply font-serif text-xl font-semibold text-rutgers-red;
+  }
+  
+  .shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(139, 0, 0, 0.25);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B0000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #660000;
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Br. Faraz Khan",
+    "date": "2025-01-26",
+    "title": "Community Leader",
+    "bio": "A dedicated member of the Rutgers community with a passion for Islamic education and community building.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "isUpcoming": true
+  },
+  {
+    "id": 2,
+    "name": "Sh. Ahmad Hassan",
+    "date": "2025-01-19",
+    "title": "Islamic Scholar",
+    "bio": "Renowned Islamic scholar with expertise in Quranic studies and contemporary Islamic issues.",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    "isUpcoming": false
+  },
+  {
+    "id": 3,
+    "name": "Br. Omar Ali",
+    "date": "2025-01-12",
+    "title": "Youth Coordinator",
+    "bio": "Active in youth programs and community outreach, bringing fresh perspectives to Islamic discussions.",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    "isUpcoming": false
+  },
+  {
+    "id": 4,
+    "name": "Sr. Fatima Zahra",
+    "date": "2025-02-02",
+    "title": "Community Educator",
+    "bio": "Passionate about Islamic education and women's empowerment within the Muslim community.",
+    "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    "isUpcoming": true
+  },
+  {
+    "id": 5,
+    "name": "Br. Yusuf Rahman",
+    "date": "2025-01-05",
+    "title": "Student Leader",
+    "bio": "Current Rutgers student and active member of various Islamic organizations on campus.",
+    "image": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face",
+    "isUpcoming": false
+  },
+  {
+    "id": 6,
+    "name": "Sh. Ibrahim Malik",
+    "date": "2025-02-09",
+    "title": "Imam",
+    "bio": "Local Imam with extensive knowledge of Islamic jurisprudence and community leadership experience.",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+    "isUpcoming": true
+  }
+]
